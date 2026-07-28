@@ -97,7 +97,7 @@ if submit:
     latest = X.iloc[[-1]]
 
     tomorrow_price = model.predict(latest)[0]
-    current_price = float(df["Close"].iloc[-1])
+    current_price = float(df["Close"].iloc[-1].item())
 
     st.subheader("Prediction")
 
