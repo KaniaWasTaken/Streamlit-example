@@ -15,10 +15,7 @@ st.set_page_config(page_title="Stock Price Predictor", layout="wide")
 st.title("📈 Tomorrow's Stock Price Prediction")
 
 with st.form("stock-form"):
-    ticker = st.text_input(
-        "Enter Stock Ticker",
-        MSFT
-    ).upper().strip()
+    ticker = st.text_input("Enter Stock Ticker","MSFT").upper().strip()
 
     submit = st.form_submit_button("Predict")
 
