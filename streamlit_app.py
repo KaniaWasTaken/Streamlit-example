@@ -109,7 +109,7 @@ if submit:
     st.metric(
         "Predicted Tomorrow Close",
         f"${tomorrow_price:.2f}",
-        delta=f"{tomorrow_price - current_price:.2f}"}
+        delta=f"{tomorrow_price - current_price:.2f}"
     )
 
     col1, col2, col3 = st.columns(3)
