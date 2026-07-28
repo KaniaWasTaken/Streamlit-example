@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 st.title("📈 Stock Price Predictor")
 
 with st.form("stock_form"):
-    ticker = st.text_input("Ticker", "AAPL").upper().strip()
+    ticker = st.text_input("Ticker", "MSFT").upper().strip()
     submit = st.form_submit_button("Predict")
 
 if submit:
