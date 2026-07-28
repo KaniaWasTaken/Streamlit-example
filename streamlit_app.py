@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import sklearn
+import yfinance as yf
 
 st.write("Hello")
-df = pd.DataFrame({"Col1":[10]})
+df = yf.download("GOOGL",interval="5y")
 df
