@@ -17,7 +17,7 @@ st.title("📈 Tomorrow's Stock Price Prediction")
 with st.form("stock-form"):
     ticker = st.text_input(
         "Enter Stock Ticker",
-        placeholder="Example: RELIANCE.NS or AAPL"
+        MSFT
     ).upper().strip()
 
     submit = st.form_submit_button("Predict")
