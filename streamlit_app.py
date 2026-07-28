@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 
-with st.form():
+with st.form(key="ticker-form"):
   ticker = st.text_input("Enter ticker")
 
   btn = st.form_sumit_button()
