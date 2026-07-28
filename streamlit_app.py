@@ -97,12 +97,19 @@ if submit:
     latest = X.iloc[[-1]]
 
     tomorrow_price = model.predict(latest)[0]
+    current_price = df["Close"].iloc[-1]
 
     st.subheader("Prediction")
 
     st.metric(
+        "Current Price",
+       f"${current_price:.2f}"
+    )
+
+    st.metric(
         "Predicted Tomorrow Close",
-        f"${tomorrow_price:.2f}"
+        f"${tomorrow_price:.2f}",
+        delta=f"{tomorrow_price - current_price:.2f}"}
     )
 
     col1, col2, col3 = st.columns(3)
